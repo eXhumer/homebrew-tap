@@ -1,18 +1,13 @@
-# EXhumer Ffmpeg
+# eXhumer's tap
 
-## How do I install these formulae?
+A [homebrew](https://github.com/Homebrew/brew) [tap](https://docs.brew.sh/Taps) to install custom formulae not available in [core](https://github.com/Homebrew/homebrew-core) tap (the default tap of homebrew). All formulae in this tap will be [keg-only](https://docs.brew.sh/FAQ#what-does-keg-only-mean).
 
-`brew install exhumer/ffmpeg/<formula>`
+## Formulae
 
-Or `brew tap exhumer/ffmpeg` and then `brew install <formula>`.
+* [`ffmpeg@6.0`](./Formula/ffmpeg@6.0.rb)
 
-Or, in a [`brew bundle`](https://github.com/Homebrew/homebrew-bundle) `Brewfile`:
+## Installation Instructions
 
-```ruby
-tap "exhumer/ffmpeg"
-brew "<formula>"
-```
+`brew install exhumer/tap/ffmpeg@6.0`
 
-## Documentation
-
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+Or `brew tap exhumer/tap` and then `brew install ffmpeg@6.0`.
