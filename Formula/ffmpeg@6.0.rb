@@ -22,6 +22,13 @@ class FfmpegAT60 < Formula
     regex(/href=.*?ffmpeg[._-]v?(\d+(?:\.\d+)+)\.t/i)
   end
 
+  bottle do
+    root_url "https://github.com/eXhumer/homebrew-tap/releases/download/ffmpeg@6.0-6.0.1"
+    sha256 arm64_sequoia: "ccca0d8e80e9b1d4d1b6074a96f3ec1274cd642330e5dd14f7a9d88c0f801423"
+    sha256 ventura:       "1c5340bf81c76f08729eefe38db44a0414a649b14ccd947e57ab164550fa60ff"
+    sha256 x86_64_linux:  "0da818afdb1b52baa6e2ec7fa217e0b669907adceca29f4345fda5309dc449e1"
+  end
+
   keg_only :versioned_formula
 
   depends_on "pkg-config" => :build
